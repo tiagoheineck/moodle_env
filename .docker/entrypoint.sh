@@ -10,5 +10,7 @@ fi
 chown www-data:www-data /var/www/html/moodledata
 chown www-data:www-data /var/www/html/moodle
 
+chmod 777 -R /var/www/html
+
 
 exec "$@"
