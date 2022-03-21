@@ -26,3 +26,20 @@ HOST: db
 Database: moodle
 User: moodle
 Pass: moodle
+
+
+# Para fazer log dos SQL adicione a seguinte configuração no config.php
+
+```
+$CFG -> dboptions  =  array  ( 
+  'logall' => true, 
+  'logslow'   =>  5 , 
+  'logerrors'   =>  true , 
+);
+```
+
+Você verá o logging de queries com 
+
+```
+select * from mdl_log_queries;
+```
